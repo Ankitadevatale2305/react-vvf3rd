@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -55,9 +54,18 @@ export default function Navbar(props) {
   );
 }
 
-// This is prop Types  object 
+// This is prop Types  object
 
-Navbar.prototypes = {title: PropTypes.string ,
-                     aboutText: PropTypes.string ,
-                     contactText: PropTypes.string
-                     }
+Navbar.prototypes = {
+  title: PropTypes.string,
+  aboutText: PropTypes.string,
+  contactText: PropTypes.string,
+};
+
+// This is a default props here
+
+Navbar.defaultProps = {
+  title: 'Set Logo Here',
+  aboutText: 'About Page Here',
+  contactText: 'Contact Page Here',
+};

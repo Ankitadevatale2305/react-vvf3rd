@@ -7,7 +7,8 @@ let name1 = 'Pranit';
 export default function App() {
   return (
     <>
-      <Navbar title="TextUtils" aboutText="About Us" contactText="Contact Us" />
+       {/* <Navbar title="TextUtils" aboutText="About Us" contactText="Contact Us" />  */}
+      <Navbar />
     </>
   );
 }
