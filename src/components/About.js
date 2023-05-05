@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="container" >
+    <div className="container" style>
       <h2>About from about component</h2>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
@@ -18,10 +18,11 @@ export default function About() {
               Accordion Item #1
             </button>
           </h2>
-          <div 
+          <div
             id="collapseOne"
             className="accordion-collapse collapse show "
-            data-bs-parent="#accordionExample">
+            data-bs-parent="#accordionExample"
+          >
             <div className="accordion-body">
               <strong>This is the first item's accordion body.</strong> It is
               shown by default, until the collapse plugin adds the appropriate
@@ -95,6 +96,9 @@ export default function About() {
           </div>
         </div>
       </div>
+      <button type="button" className="btn btn-primary my-3">
+        Enable Dark Mode
+      </button>
     </div>
-  );
+  )
 }
